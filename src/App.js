@@ -2,6 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let arr=[10,20,30,40,];
+  console.log(arr);
+
+  arr.map((a,i)=> console.log(a));
+
+  function intro(){
+    console.log("ramani");
+  }
+  intro();
+  
+  let name =() =>{
+    console.log("ramani kajal");
+  }
+  name()
   return (
     <div className="App">
       <header className="App-header">
