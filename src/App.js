@@ -25,11 +25,11 @@ let arr=[10,20,30,40,50,60];
 // let res=arr.some((a)=>a>100);
 // let res=arr.some((a)=> a > 10);
 // let res= arr.find((a)=>a>10);
-// let res = Array.isarray(arr);
+let res = Array.isArray(arr);
 // let  no = [16, 25, 36];
 // let results = no.map(Math.sqrt);
 // console.log(results);
-// console.log(res);
+console.log(res);
 
 arr.map((a,i)=> console.log(a));
 
