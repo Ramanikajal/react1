@@ -2,54 +2,78 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  let age = [
-    {
-      id: 101,
-      name: 'Abacavir',
-      quantity: 25,
-      price: 150,
-      expiry: 2022,
-      status: true
-    },
-    {
-      id: 102,
-      name: 'Eltrombopag',
-      quantity: 90,
-      price: 550,
-      expiry: 2021,
-      status: true
-    },
-    {  
+  // let age = [
+  //   {
+  //     id: 101,
+  //     name: 'Abacavir',
+  //     quantity: 25,
+  //     price: 150,
+  //     expiry: 2022,
+  //     status: true
+  //   },
+  //   {
+  //     id: 102,
+  //     name: 'Eltrombopag',
+  //     quantity: 90,
+  //     price: 550,
+  //     expiry: 2021,
+  //     status: true
+  //   },
+  //   {  
       
-      id: 103,
-      name: 'Meloxicam',
-      quantity: 85,
-      price: 450,
-      expiry: 2025,
-      status: false
-    },
-    {
-      id: 104,
-      name: 'Allopurinol',
-      quantity: 50,
-      price: 600,
-      expiry: 2023,
-      status: true
-    },
-    {
-      id: 105,
-      name: 'Phenytoin',
-      quantity: 63,
-      price: 250,
-      expiry: 2021,
-      status: false
-    }];
-  let map = aeg.map(x => console.log(x.id, x.name, x.quantity, x.expiry, x.status));
+  //     id: 103,
+  //     name: 'Meloxicam',
+  //     quantity: 85,
+  //     price: 450,
+  //     expiry: 2025,
+  //     status: false
+  //   },
+  //   {
+  //     id: 104,
+  //     name: 'Allopurinol',
+  //     quantity: 50,
+  //     price: 600,
+  //     expiry: 2023,
+  //     status: true
+  //   },
+  //   {
+  //     id: 105,
+  //     name: 'Phenytoin',
+  //     quantity: 63,
+  //     price: 250,
+  //     expiry: 2021,
+  //     status: false
+  //   }];
+  //     let map = age.map(x => console.log(x.id, x.name, x.quantity, x.expiry, x.status));
+  //     console.log(map);
+  // filter
 
-  function xdata(expiry) {
-    return expiry > 2021;
-  }
+  // function xdate(expiry){
+  //   return expiry>2022;
+  // }
+  // function xyear(){
+  //   let filtered = [2021,2022,2023,2024,2025,2026,2027].filter(xdate);
+  //    console.log(filtered)
+  // }
+  // xyear();
+  
+  // reduce
 
+  // let sum = [550,600, 450, 250,150].reduce(function (previousValue, currentValue)
+  //  {
+  //   return previousValue + currentValue
+  //  }, 0)
+  //   console.log(sum);
+//  selery 
+
+  
+  let sum = [40000,50000,35000,38000,22000].reduce(function (previousValue, currentValue)
+   {
+    return previousValue + currentValue
+   }, 0)
+    console.log(sum);
+    
+   
 
   // let arr=[10,20,30,40,50,60];
   // console.log(arr[2]);
