@@ -50,10 +50,10 @@ function App() {
   let ans=filterdata.reduce((acc,d,i)=>acc+d.price,0);
   console.log(ans);
 
-  // Filter
+  //  
   return (
     <>
-      <table border = "1"> 
+     <table border = "1"> 
         <tr>
           <th>id</th>
           <th>name</th>
