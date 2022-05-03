@@ -44,29 +44,32 @@ function App() {
       expiry: 2021,
       status: false
     }];
-  data.map((value, index) => console.log(value.id, value.name));
-  console.log(data);
+  
   let filterdata=data.filter((v,index)=>v.expiry >= 2022);
   console.log(filterdata);
-  let ans=filterdata.reduce((acc,d,i)=>acc=d,price,0);
+  let ans=filterdata.reduce((acc,d,i)=>acc+d.price,0);
   console.log(ans);
 
   // Filter
   return (
     <>
-      <table> 
-        <th>
-          <td>id</td>
-          <td>name</td>
-        </th>
+      <table border = "1"> 
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>price</th>
+          <th>total</th>
+        </tr>
 
       {
-        filterdata.map((value, inex) => {
+        filterdata.map(({id,name,price}, index) => {
           return (
             <tr>
-              <td> {value.id}</td>
-              <td> {value.name}</td>
-            </tr>
+              <td> {id}</td>
+              <td> {name}</td>
+              <td>{price}</td>
+              {index === 0 ?<td rowspan={filterdata.length}>{ans}</td>:null}
+             </tr>
           )
         })
       }
