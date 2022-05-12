@@ -1,11 +1,15 @@
-import logo from './logo.svg';
-import React,{uesset} from 'react';
-import Cityfun from './containers/functioncomponant/Cityfun';
-import Countryfun from './containers/functioncomponant/countryfun';
+import React from 'react';
+import Time from './containers/componetas/Time';
+import Timefun from './containers/componetas/timefun';
 
-function App() {
-  return{
- Countryfun
-  }
+function App(props) {
+  return (
+    <div>
+      <Time />
+      {/* <Timefun /> */}
+
+    </div>
+  );
 }
-export default Countryfun;
+
+export default App;
